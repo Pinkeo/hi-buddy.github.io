@@ -8,13 +8,14 @@ body {
   font-family: 'Major Mono Display', monospace;
   padding: 20px;
   line-height: 1.6;
+  background:#0a0c10;
 }
 
 span {
   opacity: 0;
   animation-name: typewriter;
   animation-fill-mode: forwards;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   animation-delay: calc(var(--animation-order) * var(--animation-delay));
   
 }
