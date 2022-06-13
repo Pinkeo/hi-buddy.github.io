@@ -11,6 +11,9 @@ body {
   background:#0a0c10;
   color:#ffffff;
 }
+a{
+  color: #408fbb;
+}
 
 span {
   opacity: 0;
