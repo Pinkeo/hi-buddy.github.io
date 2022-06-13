@@ -40,5 +40,31 @@
     <h2>ຂ້ອຍເປັນຜູ້ຍິງໂຕນ້ອຍໆ ຫວັງວ່າເຈົ້າຈະຫາຂ້ອຍເຫັນ </h2> <br>
     <h3>ຢາກໄດ້ facebook ຂ້ອຍຫວາ?   ລອງ<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ກົດນີ້ເບິ່ງ</a> 😉 </h3> 
 <br><br><br><br><br><br><br><br><br><br><br><small>ຂ້ອຍໝາຍເຖິງ<a href="https://www.facebook.com/pinkeo.khamphoumee">ໂຕນີ້</a>😂😂</small>
+  
+     <script>
+        let sentences = document.querySelectorAll("h1");
+        let characterCount = 0;
+
+        for (let i = 0; i < sentences.length; i++) {
+        let sentence = sentences[i];
+        let newContent = '';
+
+        // go through all characters of the sentence
+        for (let j = 0; j < sentence.textContent.length; j++) {
+            let substring = sentence.textContent.substr(j, 1);
+            // if we have a character, wrap it
+            if (substring !== " ") {
+            newContent += `<span style="--animation-order: ${characterCount};">${substring}</span>`;
+            } else {
+            newContent += substring;
+            }
+            characterCount++;
+        }
+        sentence.innerHTML = newContent;
+        }
+        
+
+    </script>
+
 </body>
 </html>
